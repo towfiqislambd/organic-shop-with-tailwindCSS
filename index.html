@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Shop</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- DaisyUI & tailwindCSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Script -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: 'rgb(139, 195, 74)',
+                banner: 'rgba(248, 246, 243,0.9)',
+                secondary: 'rgb(17, 17, 17)',
+                accent: 'rgb(106, 151, 57)',
+                sec_neutral: 'rgb(51, 51, 51)',
+              },
+              fontFamily: {
+                poppins: ['Poppins', 'sans-serif'],
+              },
+              backgroundImage: {
+                banner_img: 'url("images/leaf01.png")',
+                hero_img: 'url("images/call.jpg")',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-poppins">
+
+<!-- Header Part Starts -->
+<header class="bg-banner bg-blend-overlay bg-banner_img bg-no-repeat bg-right-bottom">
+     <!-- Nav Part -->
+ <div class="navbar bg-base-100 px-0 w-11/12 mx-auto">
+    <div class="navbar-start">
+      <a class="">
+        <img src="images/logo.svg" class="w-40">
+      </a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 text-lg font-medium gap-5">
+        <li><a>Home</a></li>
+        <li><a>Everything</a></li>
+        <li><a>Groceries</a></li>
+        <li><a>About</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+        <div class="mr-5 hidden sm:block">
+            <a href="#" class="text-accent text-lg font-semibold pr-2">$10.00</a>
+            <a href="#" class="text-accent text-lg font-semibold">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+        <a href="#" class="text-lg font-semibold hidden sm:block">
+            <i class="fa-solid fa-user"></i>
+        </a>
+        <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars bg-primary text-black rounded text-xl w-12 h-12 grid place-items-center font-black"></i>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 text-lg font-medium gap-3">
+                <li><a>Home</a></li>
+                <li><a>Everything</a></li>
+                <li><a>Groceries</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+          </div>
+    </div>
+  </div>
+ <!-- Hero Part -->
+  <div class="w-11/12 mx-auto">
+    <div class="lg:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center py-24">
+        <div class="">
+            <img src="images/bannerbg.png" class="w-full h-full mx-auto">
+        </div>
+        <div class="space-y-3 lg:space-y-5">
+            <h3 class="font-semibold text-xl text-gray-900">Best Quality Products</h3>
+            <h1 class="font-extrabold text-4xl lg:text-5xl leading-tight lg:leading-tight">Join The Organic Movement!</h1>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <button class="btn font-medium bg-accent hover:bg-accent text-gray-200 px-8 h-14 min-h-0 text-lg"><i class="fa-solid fa-cart-shopping"></i> Shop Now</button>
+        </div>
+      </div>
+  </div>
+</header>
+<!-- Header Part Ends -->
+
+
+<main>
+    <!-- Card Sections Starts -->
+    <section class="mb-20 py-20 bg-secondary">
+        <div class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="bg-sec_neutral flex items-center gap-4 px-6 py-8 rounded">
+                <div class="">
+                    <i class="fa-solid fa-truck text-accent text-5xl"></i>
+                </div>
+                <div class="text-gray-200">
+                    <h5 class="text-xl font-semibold mb-1">Free Shipping</h5>
+                    <p class="">Above $5 Only                </p>
+                </div>
+            </div>
+            <div class="bg-sec_neutral flex items-center gap-4 px-6 py-8 rounded">
+                <div class="">
+                    <i class="fa-solid fa-certificate text-accent text-5xl"></i>
+                </div>
+                <div class="text-gray-200">
+                    <h5 class="text-xl font-semibold mb-1">Certified Organic</h5>
+                    <p class="">100% Organic                </p>
+                </div>
+            </div>
+            <div class="bg-sec_neutral flex items-center gap-4 px-6 py-8 rounded">
+                <div class="">
+                    <i class="fa-solid fa-piggy-bank text-accent text-5xl"></i>
+                </div>
+                <div class="text-gray-200">
+                    <h5 class="text-xl font-semibold mb-1">Huge Savings</h5>
+                    <p class="">At Lowest Price </p>
+                </div>
+            </div>
+            <div class="bg-sec_neutral flex items-center gap-4 px-6 py-8 rounded">
+                <div class="">
+                    <i class="fa-solid fa-recycle text-accent text-5xl"></i>
+                </div>
+                <div class="text-gray-200">
+                    <h5 class="text-xl font-semibold mb-1">Easy Returns</h5>
+                    <p class="">No Questions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Card Sections Starts -->
+
+    <!-- About Us Section -->
+    <section class="w-11/12 mx-auto mb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-0">
+            <div class="space-y-4 xl:space-y-5">
+                <h4 class="text-gray-800 text-xl font-semibold">About Us</h4>
+                <h2 class="text-3xl xl:text-4xl xl:leading-tight leading-tight font-bold">Tell website visitors who you are and why they should choose your business</h2>
+                <p class="xl:pb-2 text-gray-500 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias earum, tenetur quam repellendus architecto sequi consequatur deserunt illum? Repellat, consequatur quae. Ut, quas distinctio expedita perspiciatis molestias voluptas nam optio unde sunt dolor, quo dicta reiciendis! Alias nostrum tempore blanditiis earum eum autem sapiente voluptatum. Optio sunt perferendis</p>
+                <button class="btn font-medium bg-accent hover:bg-accent text-gray-200 px-8 h-14 min-h-0 text-lg">Find Out More</button>
+            </div>
+            <div class="">
+                <img src="images/about.jpg" alt="" class="rounded lg:w-10/12 w-full sm:h-96 lg:h-auto lg:ms-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Get In Touch Section -->
+    <section>
+        <div class="hero py-24 bg-secondary bg-opacity-40 bg-blend-overlay" style="background-image: url(images/call.jpg)">
+        <div class="w-11/12 mx-auto ">
+        <div class= "bg-opacity-60"></div>
+        <div class="hero-content text-neutral-content text-center">
+        <div class="">
+        <h1 class="mb-5 text-4xl sm:text-5xl font-semibold">Insert A call to action</h1>
+        <p class="mb-5 text-xl lg:w-3/4 mx-auto">Think of what you want your visitors to do next maybe they should contact you?</p>
+        <button class="btn btn-outline text-white hover:bg-accent hover:border-none">Get In Touch</button>
+      </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="w-11/12 mx-auto mt-20">
+        <h2 class="text-3xl lg:text-4xl text-center font-semibold pb-14">Best Selling Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10 text-center">
+                <div class="card shadow border">
+                    <figure class="px-10 pt-10">
+                      <img src="images/product01.jpg" class="rounded-xl">
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h3 class="text-lg font-medium text-gray-500">Groceries</h3>
+                      <h2 class="card-title">Assorted Coffee</h2>
+                      <p>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-regular fa-star text-yellow-400"></i>
+                    </p>
+                    <p class="font-medium text-gray-600 pb-1">$35.00</p>
+                      <div class="card-actions">
+                        <button class="btn font-semibold bg-accent hover:bg-accent text-white px-11 h-12 min-h-0 rounded-md">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card shadow border">
+                    <figure class="px-10 pt-10">
+                      <img src="images/product02.jpg" class="rounded-xl">
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h3 class="text-lg font-medium text-gray-500">Groceries</h3>
+                      <h2 class="card-title">Assorted Coffee</h2>
+                      <p>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-regular fa-star text-yellow-400"></i>
+                    </p>
+                    <p class="font-medium text-gray-600 pb-1">$35.00</p>
+                      <div class="card-actions">
+                        <button class="btn font-semibold bg-accent hover:bg-accent text-white px-11 h-12 min-h-0 rounded-md">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card shadow border">
+                    <figure class="px-10 pt-10">
+                      <img src="images/product03.jpg" class="rounded-xl">
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h3 class="text-lg font-medium text-gray-500">Groceries</h3>
+                      <h2 class="card-title">Brinjal Tech</h2>
+                      <p>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-regular fa-star text-yellow-400"></i>
+                    </p>
+                    <p class="font-medium text-gray-600 pb-1">$35.00</p>
+                      <div class="card-actions">
+                        <button class="btn font-semibold bg-accent hover:bg-accent text-white px-11 h-12 min-h-0 rounded-md">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card shadow border">
+                    <figure class="px-10 pt-10">
+                      <img src="images/product04.jpg" class="rounded-xl">
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h3 class="text-lg font-medium text-gray-500">Groceries</h3>
+                      <h2 class="card-title">Assorted Coffee</h2>
+                      <p>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-regular fa-star text-yellow-400"></i>
+                    </p>
+                    <p class="font-medium text-gray-600 pb-1">$35.00</p>
+                      <div class="card-actions">
+                        <button class="btn font-semibold bg-accent hover:bg-accent text-white px-11 h-12 min-h-0 rounded-md">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card shadow border">
+                    <figure class="px-10 pt-10">
+                      <img src="images/product05.jpg" class="rounded-xl">
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h3 class="text-lg font-medium text-gray-500">Groceries</h3>
+                      <h2 class="card-title">Assorted Coffee</h2>
+                      <p>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-regular fa-star text-yellow-400"></i>
+                    </p>
+                    <p class="font-medium text-gray-600 pb-1">$35.00</p>
+                      <div class="card-actions">
+                        <button class="btn font-semibold bg-accent hover:bg-accent text-white px-11 h-12 min-h-0 rounded-md">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card shadow border">
+                    <figure class="px-10 pt-10">
+                      <img src="images/product06.jpg" class="rounded-xl">
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h3 class="text-lg font-medium text-gray-500">Groceries</h3>
+                      <h2 class="card-title">Assorted Coffee</h2>
+                      <p>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-regular fa-star text-yellow-400"></i>
+                    </p>
+                    <p class="font-medium text-gray-600 pb-1">$35.00</p>
+                      <div class="card-actions">
+                        <button class="btn font-semibold bg-accent hover:bg-accent text-white px-11 h-12 min-h-0 rounded-md">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card shadow border">
+                    <figure class="px-10 pt-10">
+                      <img src="images/product07.jpg" class="rounded-xl">
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h3 class="text-lg font-medium text-gray-500">Groceries</h3>
+                      <h2 class="card-title">Assorted Coffee</h2>
+                      <p>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-regular fa-star text-yellow-400"></i>
+                    </p>
+                    <p class="font-medium text-gray-600 pb-1">$35.00</p>
+                      <div class="card-actions">
+                        <button class="btn font-semibold bg-accent hover:bg-accent text-white px-11 h-12 min-h-0 rounded-md">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card shadow border">
+                    <figure class="px-10 pt-10">
+                      <img src="images/product08.jpg" class="rounded-xl">
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h3 class="text-lg font-medium text-gray-500">Groceries</h3>
+                      <h2 class="card-title">Milk Mango</h2>
+                      <p>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-regular fa-star text-yellow-400"></i>
+                    </p>
+                    <p class="font-medium text-gray-600 pb-1">$35.00</p>
+                      <div class="card-actions">
+                        <button class="btn font-semibold bg-accent hover:bg-accent text-white px-11 h-12 min-h-0 rounded-md">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+    </section>
+
+    <!-- Feathers Section -->
+     <section class="w-11/12 mx-auto py-20">
+        <div class="flex items-center justify-center flex-wrap">
+            <h2 class="font-semibold text-gray-800 text-2xl">Featured Brands: </h2>
+            <img src="images/logo-1.svg" class="">
+            <img src="images/logo-2.svg" class="">
+            <img src="images/logo-3.svg" class="">
+            <img src="images/logo-4.svg" class="">
+            <img src="images/logo-5.svg" class="">
+        </div>
+     </section>
+</main>
+
+<!-- Footer Section -->
+<footer class="bg-secondary text-gray-100 py-20">
+  <div class="footer w-11/12 mx-auto">
+    <aside>
+        <img src="images/logo-white.png" class="mb-1">
+        <p>Providing Organic Food since 1992 </p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+  </div>
+  </footer>
+
+</body>
+</html>
